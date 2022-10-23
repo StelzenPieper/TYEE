@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		390933B9E7CAA1A0F5FDF4CB /* Pods_TYEE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B99BD947E079AA377761C369 /* Pods_TYEE.framework */; };
+		56414C1728BA832A008046BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56414C1628BA832A008046BA /* AppDelegate.swift */; };
+		56414C1928BA832A008046BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56414C1828BA832A008046BA /* SceneDelegate.swift */; };
+		56414C2028BA832D008046BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56414C1F28BA832D008046BA /* Assets.xcassets */; };
+		56B1852228BBA18F00A6569B /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B1852128BBA18F00A6569B /* Utilities.swift */; };
+		56B1852428BBECBF00A6569B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 56B1852328BBECBF00A6569B /* GoogleService-Info.plist */; };
+		640F52BC28CF15BC009978AB /* TrophyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640F52BB28CF15BC009978AB /* TrophyListView.swift */; };
+		6419697628C8871A005422CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6419697528C8871A005422CA /* ViewController.swift */; };
+		6419697828C8893F005422CA /* TrophyListTableViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6419697728C8893F005422CA /* TrophyListTableViewViewController.swift */; };
+		644F080B28CA33AC008DC3C0 /* TrophyListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644F080A28CA33AC008DC3C0 /* TrophyListViewModel.swift */; };
+		644F080D28CA354E008DC3C0 /* TrophyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644F080C28CA354E008DC3C0 /* TrophyModel.swift */; };
+		6461CA1328EC1DFE0077FACE /* AddTrophyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6461CA1228EC1DFE0077FACE /* AddTrophyViewController.swift */; };
+		64E1931728CB2DF5003517D3 /* TrophyListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E1931628CB2DF5003517D3 /* TrophyListTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		56414C1328BA832A008046BA /* TYEE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TYEE.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		56414C1628BA832A008046BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		56414C1828BA832A008046BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		56414C1F28BA832D008046BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		56414C2428BA832D008046BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56B1852128BBA18F00A6569B /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		56B1852328BBECBF00A6569B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		640F52BB28CF15BC009978AB /* TrophyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrophyListView.swift; sourceTree = "<group>"; };
+		6419697528C8871A005422CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6419697728C8893F005422CA /* TrophyListTableViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrophyListTableViewViewController.swift; sourceTree = "<group>"; };
+		644F080A28CA33AC008DC3C0 /* TrophyListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TrophyListViewModel.swift; path = TYEE/ViewController/TrophyListViewModel.swift; sourceTree = SOURCE_ROOT; };
+		644F080C28CA354E008DC3C0 /* TrophyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TrophyModel.swift; path = TYEE/ViewController/TrophyModel.swift; sourceTree = SOURCE_ROOT; };
+		6461CA1228EC1DFE0077FACE /* AddTrophyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTrophyViewController.swift; sourceTree = "<group>"; };
+		64725DB328C8801200B863DD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		64E1931628CB2DF5003517D3 /* TrophyListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrophyListTableViewCell.swift; sourceTree = "<group>"; };
+		7D597E99A0F137F22EFE0336 /* Pods-TYEE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYEE.release.xcconfig"; path = "Target Support Files/Pods-TYEE/Pods-TYEE.release.xcconfig"; sourceTree = "<group>"; };
+		B99BD947E079AA377761C369 /* Pods_TYEE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TYEE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D45F7870F13E4DD085392D00 /* Pods-TYEE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYEE.debug.xcconfig"; path = "Target Support Files/Pods-TYEE/Pods-TYEE.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		56414C1028BA832A008046BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				390933B9E7CAA1A0F5FDF4CB /* Pods_TYEE.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		416F932C7820F731F3F558CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B99BD947E079AA377761C369 /* Pods_TYEE.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		56414C0A28BA832A008046BA = {
+			isa = PBXGroup;
+			children = (
+				56414C1528BA832A008046BA /* TYEE */,
+				56414C1428BA832A008046BA /* Products */,
+				F62A314BA639B128933A6332 /* Pods */,
+				416F932C7820F731F3F558CC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		56414C1428BA832A008046BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				56414C1328BA832A008046BA /* TYEE.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		56414C1528BA832A008046BA /* TYEE */ = {
+			isa = PBXGroup;
+			children = (
+				64725DB328C8801200B863DD /* GoogleService-Info.plist */,
+				56414C2C28BA8E13008046BA /* Elements */,
+				56414C2B28BA8E08008046BA /* Extensions */,
+				56414C2D28BA8E1D008046BA /* Models */,
+				56414C2A28BA8DFE008046BA /* Networking */,
+				56B1852028BBA14400A6569B /* Utilities */,
+				56414C2E28BA8E22008046BA /* ViewModels */,
+				56414C2F28BA8E2B008046BA /* ViewController */,
+				644F080E28CA382F008DC3C0 /* Views */,
+				56414C1628BA832A008046BA /* AppDelegate.swift */,
+				6419697528C8871A005422CA /* ViewController.swift */,
+				56414C1828BA832A008046BA /* SceneDelegate.swift */,
+				56B1852328BBECBF00A6569B /* GoogleService-Info.plist */,
+				56414C1F28BA832D008046BA /* Assets.xcassets */,
+				56414C2428BA832D008046BA /* Info.plist */,
+			);
+			path = TYEE;
+			sourceTree = "<group>";
+		};
+		56414C2A28BA8DFE008046BA /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		56414C2B28BA8E08008046BA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		56414C2C28BA8E13008046BA /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Elements;
+			sourceTree = "<group>";
+		};
+		56414C2D28BA8E1D008046BA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				644F080C28CA354E008DC3C0 /* TrophyModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		56414C2E28BA8E22008046BA /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				644F080A28CA33AC008DC3C0 /* TrophyListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		56414C2F28BA8E2B008046BA /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6461CA1228EC1DFE0077FACE /* AddTrophyViewController.swift */,
+				6419697728C8893F005422CA /* TrophyListTableViewViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		56B1852028BBA14400A6569B /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				56B1852128BBA18F00A6569B /* Utilities.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		640F52BD28CF209D009978AB /* TrophyListView */ = {
+			isa = PBXGroup;
+			children = (
+				640F52BB28CF15BC009978AB /* TrophyListView.swift */,
+			);
+			path = TrophyListView;
+			sourceTree = "<group>";
+		};
+		644F080E28CA382F008DC3C0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6461CA1428EC28760077FACE /* Popups */,
+				640F52BD28CF209D009978AB /* TrophyListView */,
+				644F081128CA389E008DC3C0 /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		644F081128CA389E008DC3C0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				64E1931628CB2DF5003517D3 /* TrophyListTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		6461CA1428EC28760077FACE /* Popups */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Popups;
+			sourceTree = "<group>";
+		};
+		F62A314BA639B128933A6332 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D45F7870F13E4DD085392D00 /* Pods-TYEE.debug.xcconfig */,
+				7D597E99A0F137F22EFE0336 /* Pods-TYEE.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		56414C1228BA832A008046BA /* TYEE */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56414C2728BA832D008046BA /* Build configuration list for PBXNativeTarget "TYEE" */;
+			buildPhases = (
+				06DE3A860CC195B7C54F1DEF /* [CP] Check Pods Manifest.lock */,
+				56414C0F28BA832A008046BA /* Sources */,
+				56414C1028BA832A008046BA /* Frameworks */,
+				56414C1128BA832A008046BA /* Resources */,
+				813D3D09F1A237BA8C343045 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TYEE;
+			productName = TYEE;
+			productReference = 56414C1328BA832A008046BA /* TYEE.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		56414C0B28BA832A008046BA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					56414C1228BA832A008046BA = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 56414C0E28BA832A008046BA /* Build configuration list for PBXProject "TYEE" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 56414C0A28BA832A008046BA;
+			productRefGroup = 56414C1428BA832A008046BA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				56414C1228BA832A008046BA /* TYEE */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		56414C1128BA832A008046BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56B1852428BBECBF00A6569B /* GoogleService-Info.plist in Resources */,
+				56414C2028BA832D008046BA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06DE3A860CC195B7C54F1DEF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TYEE-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		813D3D09F1A237BA8C343045 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TYEE/Pods-TYEE-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TYEE/Pods-TYEE-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TYEE/Pods-TYEE-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		56414C0F28BA832A008046BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6419697628C8871A005422CA /* ViewController.swift in Sources */,
+				56414C1728BA832A008046BA /* AppDelegate.swift in Sources */,
+				56B1852228BBA18F00A6569B /* Utilities.swift in Sources */,
+				644F080D28CA354E008DC3C0 /* TrophyModel.swift in Sources */,
+				56414C1928BA832A008046BA /* SceneDelegate.swift in Sources */,
+				64E1931728CB2DF5003517D3 /* TrophyListTableViewCell.swift in Sources */,
+				6461CA1328EC1DFE0077FACE /* AddTrophyViewController.swift in Sources */,
+				644F080B28CA33AC008DC3C0 /* TrophyListViewModel.swift in Sources */,
+				640F52BC28CF15BC009978AB /* TrophyListView.swift in Sources */,
+				6419697828C8893F005422CA /* TrophyListTableViewViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		56414C2528BA832D008046BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		56414C2628BA832D008046BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		56414C2828BA832D008046BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D45F7870F13E4DD085392D00 /* Pods-TYEE.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5MRE2AY865;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TYEE/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.tyee;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		56414C2928BA832D008046BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D597E99A0F137F22EFE0336 /* Pods-TYEE.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5MRE2AY865;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TYEE/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.tyee;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		56414C0E28BA832A008046BA /* Build configuration list for PBXProject "TYEE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56414C2528BA832D008046BA /* Debug */,
+				56414C2628BA832D008046BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56414C2728BA832D008046BA /* Build configuration list for PBXNativeTarget "TYEE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56414C2828BA832D008046BA /* Debug */,
+				56414C2928BA832D008046BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 56414C0B28BA832A008046BA /* Project object */;
+}
