@@ -13,11 +13,11 @@ class AddTrophyViewController: UIViewController, UIImagePickerControllerDelegate
     let addTrophyView = UIView()
     let cancelButton = UIButton()
     let newTrophyFishSpeciesTextField = UITextField()
-
+        
     private var _viewModel: TrophyListViewModel?
     private let _addNewTrophyButton = UIButton()
     private let _addTrophyImageButton = UIButton()
-    
+        
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         guard let image = info[.editedImage] as? UIImage else { return }
 
@@ -129,7 +129,7 @@ class AddTrophyViewController: UIViewController, UIImagePickerControllerDelegate
         view.layer.cornerRadius = 20
 
         setupAddTrophyView()
-
+        
         _viewModel = TrophyListViewModel(model: nil)
     }
     
@@ -148,8 +148,9 @@ class AddTrophyViewController: UIViewController, UIImagePickerControllerDelegate
         if let newTrophyFishSpecies = newTrophyFishSpeciesTextField.text, !newTrophyFishSpecies.isEmpty {
 
             _viewModel?.addNewTrophy(newFishSpecies: newTrophyFishSpecies, newFishLength: 12.12, newFishWeight: 12.12, newTrophyImage: newTrophyFishSpecies, newTrophyCatchStyle: newTrophyFishSpecies)
+            
         }
         
-        self.dismiss(animated: true)
+        self.dismiss(animated: true, completion: nil)
     }
 }

@@ -12,7 +12,7 @@ import TPKeyboardAvoiding
 
 class TrophyListTableViewViewController: UITableViewController {
 
-    var trophyListTableView: UITableView {
+    var trophyListTableView: UITableView? {
         let trophyListTableView = UITableView()
         trophyListTableView.translatesAutoresizingMaskIntoConstraints = false
         trophyListTableView.register(
@@ -32,7 +32,7 @@ class TrophyListTableViewViewController: UITableViewController {
     func updateTrophyList() {
         guard let trophies = _viewModel else { return }
 
-        self.trophyListTableView.reloadData()
+        self.tableView?.reloadData()
     }
 
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -55,9 +55,17 @@ class TrophyListTableViewViewController: UITableViewController {
         tableView.backgroundView = UIImageView(image: UIImage(named: "LakeBackground.jpg"))
 
         _viewModel = TrophyListViewModel(model: nil)
+        
+        _viewModel?.delegate = self
 
         view.addSubview(_addTrophyButton)
         _configureAddTrophyButton()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        _viewModel?.loadTrophies()
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -120,7 +128,7 @@ class TrophyListTableViewViewController: UITableViewController {
     @objc func addTrophyButtonTouchUpInside(_ sender: Any) {
         let addTrophyView = AddTrophyViewController()
 
-        addTrophyView.modalPresentationStyle = .overFullScreen
+        addTrophyView.modalPresentationStyle = .fullScreen
         addTrophyView.modalTransitionStyle = .crossDissolve
         navigationController?.present(addTrophyView, animated: false)
     }
@@ -133,4 +141,3 @@ extension TrophyListTableViewViewController: TrophyListViewModelDelegate {
         }
     }
 }
-

@@ -25,31 +25,13 @@ class TrophyListViewModel: ObservableObject {
 
     var trophies = [Trophies]() {
         didSet {
-            delegate?.didUpdateTrophies()
+            self.delegate?.didUpdateTrophies()
         }
     }
-
+    
     weak var delegate: TrophyListViewModelDelegate?
 
     init(model: [Trophies]?) {
-        let defaultModel = [
-            Trophies(fishSpecies: "Forelle",
-                     fishLength: 30.00,
-                     fishWeight: 200.05,
-                     trophyImage: "Trout_horizontal_Image",
-                     trophyCatchStyle: "photo.circle.fill",
-                     id: "testID_1"
-                    ),
-            Trophies(fishSpecies: "Lachs",
-                     fishLength: 120.20,
-                     fishWeight: 30.05,
-                     trophyImage: "Walleye_vertical_Image",
-                     trophyCatchStyle: "photo.circle.fill",
-                     id: "testID_2"
-                    ),
-        ]
-
-        trophies = defaultModel
 
         loadTrophies()
     }
@@ -72,8 +54,6 @@ class TrophyListViewModel: ObservableObject {
         if let encoded = try? encoder.encode(trophies) {
 
         UserDefaults.standard.set(encoded, forKey: "TrophiesArray")
-                        
-        print(encoded)
         }
     }
 
