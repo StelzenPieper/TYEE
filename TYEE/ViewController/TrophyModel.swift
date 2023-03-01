@@ -5,15 +5,33 @@
 //  Created by Sebastian Ottow on 08.09.22.
 //
 
-import Foundation
 import UIKit
+import RealmSwift
 
-struct Trophies: Codable {
 
-    var fishSpecies: String
-    var fishLength: Double
-    var fishWeight: Double
-    var trophyImage: String
-    var trophyCatchStyle: String
-    var id: String
+class Trophy: Object {
+    
+    @Persisted(primaryKey: true) var _id: ObjectId
+    
+    @Persisted var trophySpecies = "Beispeilspezies"
+    @Persisted var trophyLength = 10.0
+    @Persisted var trophyWeight = 2.5
+    @Persisted var trophyImagePath = "BeispielImagePath"
+    @Persisted var trophyCatchStylePath = "BeispielCatchIconPath"
+    
+    convenience init(
+        trophySpecies: String,
+        trophyLength: Double,
+        trophyWeight: Double,
+        trophyImagePath: String,
+        trophyCatchStylePath: String
+    ) {
+        self.init()
+        self.trophySpecies = trophySpecies
+        self.trophyLength = trophyLength
+        self.trophyWeight = trophyWeight
+        self.trophyImagePath = trophyImagePath
+        self.trophyCatchStylePath = trophyCatchStylePath
+    }
+    
 }

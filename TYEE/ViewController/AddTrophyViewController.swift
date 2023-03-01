@@ -147,7 +147,7 @@ class AddTrophyViewController: UIViewController, UIImagePickerControllerDelegate
     @objc func addNewTrophyButtonTouchUpInside(_ sender: UIButton) {
         if let newTrophyFishSpecies = newTrophyFishSpeciesTextField.text, !newTrophyFishSpecies.isEmpty {
 
-            _viewModel?.addNewTrophy(newFishSpecies: newTrophyFishSpecies, newFishLength: 12.12, newFishWeight: 12.12, newTrophyImage: newTrophyFishSpecies, newTrophyCatchStyle: newTrophyFishSpecies)
+            _viewModel?.addTrophy(newSpecies: newTrophyFishSpecies, newLength: 12.12, newWeight: 12.12, newImagePath: newTrophyFishSpecies, newCatchStylePath: newTrophyFishSpecies)
             
         }
         

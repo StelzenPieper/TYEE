@@ -301,8 +301,6 @@
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-TYEE/Pods-TYEE-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
-			outputPaths = (
-			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TYEE/Pods-TYEE-frameworks.sh\"\n";

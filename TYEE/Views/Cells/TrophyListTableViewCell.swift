@@ -12,7 +12,7 @@ import TinyConstraints
 class TrophyListTableViewCell: UITableViewCell {
     static let identifier = "TrophyListTableViewCell"
 
-    var viewModel: Trophies?
+    var viewModel: Trophy?
 
     let trophyView = UIView()
     let trophyImageView = UIImageView()
@@ -85,19 +85,19 @@ class TrophyListTableViewCell: UITableViewCell {
     private func _configureTrophyLabel() {
         trophyLabel.numberOfLines = 0
         trophyLabel.adjustsFontSizeToFitWidth = true
-        trophyLabel.text = viewModel?.fishSpecies
+        trophyLabel.text = viewModel?.trophySpecies
     }
 
     private func _configureTrophyWeight() {
         trophyWeight.numberOfLines = 0
         trophyWeight.adjustsFontSizeToFitWidth = true
-        trophyWeight.text = "\(viewModel?.fishWeight.description ?? "0")g"
+        trophyWeight.text = "\(viewModel?.trophyWeight.description ?? "0")g"
     }
 
     private func _configureTrophyLength() {
         trophyLength.numberOfLines = 0
         trophyLength.adjustsFontSizeToFitWidth = true
-        trophyLength.text = "\(viewModel?.fishLength.description ?? "0") cm"
+        trophyLength.text = "\(viewModel?.trophyLength.description ?? "0") cm"
     }
 
     private func _setTrophyImageConstraints() {
