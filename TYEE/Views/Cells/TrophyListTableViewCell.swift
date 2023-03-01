@@ -20,6 +20,7 @@ class TrophyListTableViewCell: UITableViewCell {
     let trophyLabel = UILabel()
     let trophyWeight = UILabel()
     let trophyLength = UILabel()
+    
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -59,7 +60,7 @@ class TrophyListTableViewCell: UITableViewCell {
         trophyView.addSubview(trophyCatchStyleIconImageView)
         trophyView.addSubview(trophyWeight)
         trophyView.addSubview(trophyLength)
-
+        
         _configureTrophyLabel()
         _configureTrophyImageView()
         _configureTrophyCatchStyleIconImageView()

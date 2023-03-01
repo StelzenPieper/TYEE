@@ -122,6 +122,28 @@ class TrophyListTableViewViewController: UITableViewController {
         let radius = cell.contentView.layer.cornerRadius
         cell.layer.shadowPath = UIBezierPath(roundedRect: cell.bounds, cornerRadius: radius).cgPath
     }
+    
+    override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath)
+            -> UISwipeActionsConfiguration? {
+                let deleteAction = UIContextualAction(style: .normal, title: nil) {
+                    (_, _, completionHandler) in
+                    let trophies = self.realm.objects(Trophy.self)
+    
+                    let trophyToDelete = trophies[indexPath.item]
+    
+                    try! self.realm.write {
+                        self.realm.delete(trophyToDelete)
+                    }
+                    completionHandler(true)
+                }
+                
+                deleteAction.image = UIImage(systemName: "trash")
+                deleteAction.backgroundColor = .systemRed
+
+                let configuration = UISwipeActionsConfiguration(actions: [deleteAction])
+                
+                return configuration
+    }
 
     private func _configureAddTrophyButton() {
         _addTrophyButton.configuration = .filled()
